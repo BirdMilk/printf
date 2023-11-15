@@ -100,7 +100,7 @@ int handle_nums(int iNdex, char bff[], int marks,
 	int width, int accuraci, int length, char padd, char extra_c);
 int handle_pointer(char buffer[], int iNdex, int length,
 	int width, int marks, char padd, char extra_c, int padd_start);
-int handle_unsigned(int _isMinus, int iNdex, char buffer[],
+int handle_unsign(int _isMinus, int iNdex, char buffer[],
 	int marks, int width, int accuraci, int size);
 
 
