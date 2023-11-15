@@ -32,7 +32,7 @@ int output_characters(va_list types, char buffer[], int marks,
 int output_string(va_list types, char buffer[], int marks,
 	int width, int accuraci, int size)
 {
-	int length = 0, i = 0, y;
+	int length = 0, i = 0, y, num_of_spac;
 	char *str = va_arg(types, char *);
 
 	OPEN(width);
@@ -63,7 +63,7 @@ int output_string(va_list types, char buffer[], int marks,
 		}
 		else
 		{
-			for (int num_of_spac = width - length; num_of_spac > 0; num_of_spac--)
+			for (num_of_spac = width - length; num_of_spac > 0; num_of_spac--)
 			{
 				write(1, " ", 1);
 			}
